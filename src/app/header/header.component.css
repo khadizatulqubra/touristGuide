@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Playwrite';
+   src: url('/assets/font/Dancing_Script/Dancing_Script,Playwrite_CO/Playwrite_CO/PlaywriteCO-VariableFont_wght.ttf') format('truetype');
+
+
+}
+
+@font-face {
+    font-family: 'Playwrite co';
+   src: url('/assets/font/Dancing_Script/Dancing_Script,Playwrite_CO/Abril_Fatface,Dancing_Script,Playwrite_CO') format('truetype');
+
+  
+
+
+}
+
+/* Header styles */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 100px;
+  }
+  
+
+  
+  
+  .logo  {
+    font-weight: 500;
+  font-family: 'Playwrite';
+  font-size: 18px;
+  color: #ede9e6;
+
+  }
+  
+  .logo:hover {
+    cursor: pointer;
+  }
+  
+  .desktop_menu {
+   display: flex;
+   align-items: center;
+  }
+  
+  .desktop_menu ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .desktop_menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    color: #ede9e6;
+    font-size: 20px;
+    margin-left: 26px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-family: 'Playwrite co';
+  }
+  
+  .desktop_menu ul li:hover {
+    color:  #ede9e6;
+    transition: 0.4s ease-in-out;
+    font-weight: bold;
+  }
+  
+  .contact-info {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .contact-info span {
+    margin: 2px 0;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .desktop_menu {
+      display: none;
+    }
+    
+    .menu-icon {
+      display: block;
+    }
+    
+    .contact-info {
+      display: none;
+    }
+    
+    .logo {
+      flex: 1;
+    }
+  }
+  
+  
