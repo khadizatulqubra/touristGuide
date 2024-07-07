@@ -1,49 +1,42 @@
 @font-face {
     font-family: 'Playwrite';
-   src: url('/assets/font/Dancing_Script/Dancing_Script,Playwrite_CO/Playwrite_CO/PlaywriteCO-VariableFont_wght.ttf') format('truetype');
-
-
-}
-
-@font-face {
-    font-family: 'Playwrite co';
-   src: url('/assets/font/Dancing_Script/Dancing_Script,Playwrite_CO/Abril_Fatface,Dancing_Script,Playwrite_CO') format('truetype');
-
-  
-
-
-}
-
-/* Header styles */
-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 25px 100px;
+    src: url('/assets/font/Dancing_Script/Dancing_Script,Playwrite_CO/Playwrite_CO/PlaywriteCO-VariableFont_wght.ttf') format('truetype');
   }
   
-
+  @font-face {
+    font-family: 'Playwrite co';
+    src: url('/assets/font/Dancing_Script/Dancing_Script,Playwrite_CO/Abril_Fatface,Dancing_Script,Playwrite_CO') format('truetype');
+  }
   
+  /* Header styles */
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 100px;
+  }
   
-  .logo  {
+  .logo {
     font-weight: 500;
-  font-family: 'Playwrite';
-  font-size: 18px;
-  color: #ede9e6;
-
+    font-family: 'Playwrite';
+    font-size: 18px;
+    color: #ede9e6;
   }
   
   .logo:hover {
     cursor: pointer;
+    color: #cd6415;
+    transition: 0.4s ease-in-out;
+    font-weight: bold;
   }
   
   .desktop_menu {
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
   }
   
   .desktop_menu ul {
@@ -63,7 +56,7 @@ header {
   }
   
   .desktop_menu ul li:hover {
-    color:  #ede9e6;
+    color: #ede9e6;
     transition: 0.4s ease-in-out;
     font-weight: bold;
   }
@@ -71,25 +64,31 @@ header {
   .contact-info {
     color: #fff;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
+    padding: 20px;
   }
   
   .contact-info span {
-    margin: 2px 0;
+    margin: 20px 20px;
   }
   
   .menu-icon {
     display: none;
   }
   
+  /* Media Query for devices with a max width of 900px */
   @media screen and (max-width: 900px) {
     .desktop_menu {
-      display: none;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: 100px;
     }
     
-    .menu-icon {
-      display: block;
+    .desktop_menu ul li {
+      justify-content: space-between;
+      margin: 0;
     }
     
     .contact-info {
@@ -101,4 +100,32 @@ header {
     }
   }
   
+  /* Media Query for iPhone 14 Pro Max (430px width) */
+  @media screen and (max-width: 430px) {
+    header {
+      padding: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .logo {
+      font-size: 16px;
+    }
+    
+    .desktop_menu {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .desktop_menu ul {
+      width: 100%;
+    }
+    
+    .desktop_menu ul li {
+      display: block;
+      margin: 10px 0;
+      font-size: 18px;
+    }
+  }
   
