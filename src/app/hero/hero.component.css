@@ -37,11 +37,13 @@
     font-family: 'Playwrite co';
     position: relative;
     left: 100px;
+
   }
   
   .hero h1 {
     font-size: 2em;
     margin-bottom: 20px;
+    font-weight: 300;
   }
   
   .hero p {
@@ -53,7 +55,8 @@
   
   form {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+ 
   }
   
   input[type="text"] {
@@ -90,21 +93,34 @@
   
     .hero-content {
       left: 0;
-      padding: 10px;
       font-size: 10px;
+      padding: 5px;
       position: relative;
-    
-      bottom: 10px;
+      bottom: 10%;
     }
+    .hero h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        font-weight: 300;
+      }
+      
+      .hero p {
+        font-size: 1em;
+      font-weight: bolder;
+        margin-bottom: 50px;
+        font-family: 'Playwrite';
+      
+      }
+      
   
     input[type="text"] {
       left: 10px;
       font-size: 10px;
-      width: calc(100% - 40px);
+      width: calc(100% - 30px);
     }
   
     button {
-      left: calc(100% - 80px);
+      left: calc(100% - 100px);
     }
   }
   
