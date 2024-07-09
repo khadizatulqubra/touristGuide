@@ -1,0 +1,45 @@
+.popular-destinations {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e0f7fa;
+  }
+  
+  .popular-destinations h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .destinations-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .destination-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 230px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .destination-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .destination-card h3 {
+    font-family: 'Playwrite', sans-serif;
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .destination-card p {
+    font-family: 'Playwrite co', sans-serif;
+    font-size: 1em;
+    color: #666;
+  }
+  

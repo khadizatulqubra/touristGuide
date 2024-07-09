@@ -1,0 +1,11 @@
+<section class="popular-destinations">
+    <h2>Popular Destinations</h2>
+    <div class="destinations-container">
+      <div class="destination-card" *ngFor="let destination of destinations">
+        <img [src]="destination.image" alt="{{ destination.title }}">
+        <h3>{{ destination.title }}</h3>
+        <p>{{ destination.description }}</p>
+      </div>
+    </div>
+  </section>
+  
