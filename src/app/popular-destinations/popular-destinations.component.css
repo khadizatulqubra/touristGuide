@@ -1,7 +1,7 @@
 .popular-destinations {
     text-align: center;
     padding: 50px 20px;
-    background-color: #e0f7fa;
+    background: linear-gradient(135deg, #d3f9f4, #f7f0e6);
   }
   
   .popular-destinations h2 {
@@ -28,7 +28,9 @@
   
   .destination-card img {
     width: 100%;
-    border-radius: 10px 10px 0 0;
+    height:30vh;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow:0 4px 16px rgb(125, 125, 129);
   }
   
   .destination-card h3 {

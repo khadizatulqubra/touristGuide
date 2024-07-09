@@ -1,16 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
+import { Component, OnInit, Input } from '@angular/core';
+import { CommonModule, NgStyle } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-popular-destinations',
   standalone: true,
-  imports: [CommonModule], // Add CommonModule to imports
+  imports: [CommonModule,NgStyle], // Ensure CommonModule is imported
   templateUrl: './popular-destinations.component.html',
   styleUrls: ['./popular-destinations.component.css']
 })
+export class PopularDestinationsComponent implements OnInit {
+  @Input() color: string | undefined;
 
-export class PopularDestinationsComponent {
+  constructor() {}
+
+  ngOnInit(): void {}
+
   destinations = [
     {
       image: '/assets/Venice.jpg',
@@ -41,15 +46,15 @@ export class PopularDestinationsComponent {
       image: '/assets/Norway1.jpg',
       title: 'Norway',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-    }
-    ,{
+    },
+    {
       image: '/assets/Switzerland.jpg',
       title: 'Switzerland',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
       image: '/assets/Stockholm.jpg',
-      title: 'Stocholm',
+      title: 'Stockholm',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
