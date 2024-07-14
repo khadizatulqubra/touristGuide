@@ -53,7 +53,7 @@
     display: inline-block;
     color: #ede9e6;
     font-size: 20px;
-    margin-left: 26px;
+    margin-left: 30px;
     cursor: pointer;
     text-transform: capitalize;
   }
@@ -63,15 +63,31 @@
     font-weight: bold;
   }
   .contact-info {
-    color: #fff;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     padding: 20px;
+    text-transform: capitalize;
+  
   }
   
   .contact-info span {
     margin: 20px 20px;
+  
+  }
+  .contact-info button{
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    width: 100px;
+    color: #393a3ae7;
+    box-shadow: 1px 2px 1px 3px rgb(1, 46, 30);
+    font-family: 'Playwrite co';
+   font-size: 15px;
+   font-weight: 600;
+   
+
+
   }
   
   .menu-icon {

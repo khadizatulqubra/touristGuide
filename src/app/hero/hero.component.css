@@ -24,60 +24,76 @@
     align-items: center;
     justify-content: space-around;
     padding: 0px 100px;
+    margin: 5px;
   }
   
   .hero-content {
     display: grid;
     grid-template-columns: 1fr;
     padding: 20px;
-    width: 100%;
+    width: auto;
     max-width: 600px;
     column-gap: 20px;
     color: #fff;
     font-family: 'Playwrite co';
     position: relative;
-    left: 100px;
+    left: 10px;
+  
+  
 
   }
   
   .hero h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
     font-weight: 300;
+    position: relative;
+    left:10%;
+  
   }
   
   .hero p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 50px;
     font-family: 'Playwrite';
     font-weight: 900;
+    position: relative;
+    left:30%;
   }
   
   form {
     display: flex;
-    justify-content: start;
+    flex-direction: row;
+ justify-content: center;
+    align-items: center;
+
  
   }
   
   input[type="text"] {
     padding: 10px;
     font-size: 16px;
-    background-color: rgb(98, 205, 205);
+    background: linear-gradient(135deg, #0bf1d2, #f7f0e6);
     border-radius: 15px;
     color: #ffffff;
-    width: 20rem;
+    width: 22rem;
     border: 1px solid rgb(98, 205, 205);
+    position: relative;
+    left:15%;
   }
   
   button {
     padding: 10px 20px;
     background-color: transparent;
-    color: rgb(242, 246, 242);
+    color: rgba(76, 75, 75, 0.868);
     border: none;
     cursor: pointer;
     border-radius: 15px;
-    position: absolute;
-    left: 16rem;
+    position: relative;
+    right: 30px;
+ 
+  
+   
   }
   
   button:hover {

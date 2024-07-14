@@ -29,7 +29,7 @@
   .destination-card img {
     width: 100%;
     height:30vh;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 0px 0px;
     box-shadow:0 4px 16px rgb(125, 125, 129);
   }
   
