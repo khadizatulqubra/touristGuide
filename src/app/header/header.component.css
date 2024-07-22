@@ -80,10 +80,10 @@
     padding: 5px 10px 5px 10px;
     border: none;
     width: 100px;
-    color: #393a3ae7;
-    box-shadow: 1px 2px 1px 3px rgb(1, 46, 30);
+    color: #ffffffe7;
+    background-color: transparent;
     font-family: 'Playwrite co';
-   font-size: 15px;
+   font-size: 20px;
    font-weight: 600;
    
 
